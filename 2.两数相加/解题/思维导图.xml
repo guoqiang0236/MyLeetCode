@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="28.2.7">
+  <diagram name="两数相加解题思路" id="diagram">
+    <mxGraphModel dx="883" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="center" value="两数相加" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4A90E2;fontColor=white;fontSize=16;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="350" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis" value="问题分析" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7B68EE;fontColor=white;" parent="1" vertex="1">
+          <mxGeometry x="50" y="180" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" parent="1" source="center" target="analysis" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="core" value="核心思路" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7B68EE;fontColor=white;" parent="1" vertex="1">
+          <mxGeometry x="280" y="180" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" parent="1" source="center" target="core" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="steps" value="实现步骤" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7B68EE;fontColor=white;" parent="1" vertex="1">
+          <mxGeometry x="510" y="180" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" parent="1" source="center" target="steps" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="complexity" value="复杂度分析" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7B68EE;fontColor=white;" parent="1" vertex="1">
+          <mxGeometry x="740" y="180" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" parent="1" source="center" target="complexity" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" value="数字逆序存储&#xa;342 → [2,4,3]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#50C878;fontColor=white;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="10" y="310" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_a1" parent="1" source="analysis" target="a1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="逐位相加&#xa;需要处理进位" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#50C878;fontColor=white;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="110" y="310" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_a2" parent="1" source="analysis" target="a2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="两个指针&#xa;遍历两链表" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6B6B;fontColor=white;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="240" y="310" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_c1" parent="1" source="core" target="c1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="进位变量carry&#xa;记录上一位进位" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6B6B;fontColor=white;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="340" y="310" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_c2" parent="1" source="core" target="c2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" value="创建哨兵节点&#xa;简化头部处理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFA500;fontColor=white;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="470" y="310" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_s1" parent="1" source="steps" target="s1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="逐位计算和&#xa;sum % 10 为位数&#xa;sum / 10 为进位" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFA500;fontColor=white;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="570" y="310" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_s2" parent="1" source="steps" target="s2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="comp1" value="时间复杂度&#xa;O(max(m,n))" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9B59B6;fontColor=white;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="700" y="310" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_comp1" parent="1" source="complexity" target="comp1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="comp2" value="空间复杂度&#xa;O(max(m,n))" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9B59B6;fontColor=white;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="800" y="310" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_comp2" parent="1" source="complexity" target="comp2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail_title" value="详细算法流程" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34495E;fontColor=white;fontSize=14;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="280" y="450" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="detail1" value="1️⃣ 初始化：dummyHead、current、carry=0" style="whiteSpace=wrap;html=1;fontSize=11;fillColor=#ECF0F1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="510" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="detail2" value="2️⃣ 循环条件：l1≠null OR l2≠null OR carry≠0" style="whiteSpace=wrap;html=1;fontSize=11;fillColor=#ECF0F1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="560" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="detail3" value="3️⃣ 获取值：val1=l1?l1-&gt;val:0, val2=l2?l2-&gt;val:0" style="whiteSpace=wrap;html=1;fontSize=11;fillColor=#ECF0F1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="610" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="detail4" value="4️⃣ 计算：sum=val1+val2+carry" style="whiteSpace=wrap;html=1;fontSize=11;fillColor=#ECF0F1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="660" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="detail5" value="5️⃣ 更新进位和创建新节点：carry=sum/10, digit=sum%10" style="whiteSpace=wrap;html=1;fontSize=11;fillColor=#ECF0F1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="710" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="detail6" value="6️⃣ 移动指针：l1=l1?l1-&gt;next:null, l2=l2?l2-&gt;next:null" style="whiteSpace=wrap;html=1;fontSize=11;fillColor=#ECF0F1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="760" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="detail7" value="7️⃣ 返回：dummyHead-&gt;next（跳过哨兵节点）" style="whiteSpace=wrap;html=1;fontSize=11;fillColor=#ECF0F1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="810" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="example_title" value="示例演示" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34495E;fontColor=white;fontSize=14;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="50" y="450" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="example" value="l1=[2,4,3] (342)&#xa;l2=[5,6,4] (465)&#xa;結果=[7,0,8] (807)&#xa;&#xa;計算過程：&#xa;2+5=7 (carry=0)&#xa;4+6+0=10 → digit=0, carry=1&#xa;3+4+1=8 (carry=0)" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#E8F8F5;" parent="1" vertex="1">
+          <mxGeometry x="40" y="510" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="key_title" value="关键要点" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34495E;fontColor=white;fontSize=14;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="570" y="450" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="key" value="✓ 逆序存储的优势：&#xa;  可直接逐位相加&#xa;&#xa;✓ 哨兵节点优化：&#xa;  避免特殊处理头节点&#xa;&#xa;✓ 进位处理：&#xa;  sum/10 进位&#xa;  sum%10 当前位&#xa;&#xa;✓ 空指针处理：&#xa;  用0替代nullptr" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#FEF5E7;" parent="1" vertex="1">
+          <mxGeometry x="560" y="510" width="200" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

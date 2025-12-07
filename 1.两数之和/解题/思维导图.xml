@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.4">
+  <diagram id="two-sum-mindmap" name="两数之和解题思路">
+    <mxGraphModel dx="1546" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="center" parent="1" style="ellipse;whiteSpace=wrap;html=1;rounded=1;fillColor=#FFD966;fontSize=16;fontStyle=bold;" value="两数之和问题" vertex="1">
+          <mxGeometry height="80" width="150" x="350" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis" parent="1" style="rounded=1;fillColor=#B4C7E7;fontSize=13;fontStyle=bold;" value="问题分析" vertex="1">
+          <mxGeometry height="60" width="100" x="260" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="center" target="analysis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis1" parent="1" style="rounded=1;fillColor=#E2EFDA;fontSize=11;" value="找两个数，和为目标值" vertex="1">
+          <mxGeometry height="50" width="160" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1a" edge="1" parent="1" source="analysis" target="analysis1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis2" parent="1" style="rounded=1;fillColor=#E2EFDA;fontSize=11;" value="返回两个数的索引" vertex="1">
+          <mxGeometry height="50" width="160" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1b" edge="1" parent="1" source="analysis" target="analysis2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="solution" parent="1" style="rounded=1;fillColor=#B4C7E7;fontSize=13;fontStyle=bold;" value="解法对比" vertex="1">
+          <mxGeometry height="60" width="100" x="560" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="center" target="solution">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="solution1" parent="1" style="rounded=1;fillColor=#FCE4D6;fontSize=10;" value="暴力法&#xa;O(n²) / O(1)" vertex="1">
+          <mxGeometry height="60" width="220" x="410" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2a" edge="1" parent="1" source="solution" target="solution1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="solution2" parent="1" style="rounded=1;fillColor=#D5A6BD;fontSize=10;" value="哈希表法&#xa;O(n) / O(n)" vertex="1">
+          <mxGeometry height="60" width="160" x="670" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2b" edge="1" parent="1" source="solution" target="solution2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hash" parent="1" style="rounded=1;fillColor=#B4C7E7;fontSize=13;fontStyle=bold;" value="哈希表法详解" vertex="1">
+          <mxGeometry height="60" width="150" x="350" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="center" target="hash">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hash1" parent="1" style="rounded=1;fillColor=#E2EFDA;fontSize=10;" value="步骤1&#xa;创建哈希表" vertex="1">
+          <mxGeometry height="60" width="70" x="250" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3a" edge="1" parent="1" source="hash" target="hash1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hash2" parent="1" style="rounded=1;fillColor=#E2EFDA;fontSize=10;" value="步骤2&#xa;遍历数组" vertex="1">
+          <mxGeometry height="60" width="70" x="350" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3b" edge="1" parent="1" source="hash" target="hash2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hash3" parent="1" style="rounded=1;fillColor=#E2EFDA;fontSize=10;" value="步骤3&#xa;查找补数" vertex="1">
+          <mxGeometry height="60" width="70" x="450" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3c" edge="1" parent="1" source="hash" target="hash3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hash4" parent="1" style="rounded=1;fillColor=#E2EFDA;fontSize=10;" value="步骤4&#xa;存储数据" vertex="1">
+          <mxGeometry height="60" width="70" x="550" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3d" edge="1" parent="1" source="hash" target="hash4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
